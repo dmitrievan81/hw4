@@ -73,6 +73,11 @@ ASTNode *Parser::prim() {
     case Token::Name:
         node = new Variable(lexer_.get_name());
         break;
+    case Token::Lbrace:
+        node = expr();
+        break;
+    case Token::Rbrace:
+        break;
     default:
         break;
     }
