@@ -1,6 +1,6 @@
 // OTUS C++ Basic course homework skeleton.
 // Lexer implementation
-
+#include <iostream>
 #include "lexer.hpp"
 
 #include <cctype>
